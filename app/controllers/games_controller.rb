@@ -13,7 +13,6 @@ class GamesController < ApplicationController
   end
 
   def score
-    raise
     @letters = params[:letters].split
     @the_words = params[:word]
     if included?(@the_words, @letters)
